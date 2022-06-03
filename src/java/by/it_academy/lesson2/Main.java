@@ -1,8 +1,6 @@
-package com.by.it_academy.lesson2;
+package by.it_academy.lesson2;
 
 public class Main {
-
-
 
     public static void main(String[] args) {
         String name = "Kirill Karpenko";
@@ -11,11 +9,7 @@ public class Main {
         System.out.println("My name is " + name);
         System.out.println("My age is " + age);
         System.out.println("My height is " + height);
-
     }
-
-
-
 }
 
 
