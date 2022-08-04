@@ -2,22 +2,12 @@ package by.it_academy.lesson7;
 
 public class TextReverse {
     public static void main(String[] args) {
-        StringBuilder stringBuilder = new StringBuilder("FOREVER");
-        stringBuilder.reverse();
-        System.out.println(stringBuilder);
-
-        /*
-        String text = "FOREVER";
-        String[] arrayText = text.split("");
-        int j = 0;
-        while (j < arrayText.length-1){
-        j++;
+        String initial = "some string";
+        StringBuilder builder = new StringBuilder();
+        for (int i = initial.length() - 1; i >= 0; i--) {
+            builder.append(initial.charAt(i));
         }
-        for (int i = j; i > 0; i--)
-        {
-            System.out.println(arrayText[i]);
-        }
-        */
+        System.out.println(builder);
     }
 
 }
