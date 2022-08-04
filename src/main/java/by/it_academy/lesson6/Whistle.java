@@ -1,7 +1,7 @@
 package by.it_academy.lesson6;
 
 public class Whistle {
-    private String sound;
+    private final String sound;
 
     public Whistle(String whistleSound) {
         sound = whistleSound;
