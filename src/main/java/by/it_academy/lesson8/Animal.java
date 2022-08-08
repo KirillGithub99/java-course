@@ -3,9 +3,9 @@ package by.it_academy.lesson8;
 public class Animal {
 
 
-    private String name;
+    private final String name;
 
-     public Animal(String name) { //конструктор
+    public Animal(String name) { //конструктор
         this.name = name;
     }
 

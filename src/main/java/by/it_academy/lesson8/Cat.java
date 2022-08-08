@@ -2,11 +2,15 @@ package by.it_academy.lesson8;
 
 public class Cat extends Animal implements NoiseCapable {
 
-    public Cat() {
+    public Cat(String name) {
         super(name);
     }
 
-    public void purr(){
+    public Cat() {
+        super("Cat");
+    }
+
+    public void purr() {
         System.out.println(name() + "purr");
     }
 
@@ -14,11 +18,15 @@ public class Cat extends Animal implements NoiseCapable {
     public void makeNoise() {
         purr();
     }
-    public static void main(String[] args){
-        Cat cat = new Cat();
-        cat.name = "Jora";
+
+    public static void main(String[] args) {
+        Cat cat = new Cat("Jora");
         cat.sleep();
         cat.eat();
         cat.makeNoise();
     }
+
 }
+
+
+
